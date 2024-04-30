@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>
+        Climate cat icons
+    </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+</head>
+
+<body style="background-color: azure;">
+    <img id="catumbrella" src="img/catumbrella.png" width="200" height="250"/>
+    <img id="catwithumbrella" src="img/catwithumbrella.png" width="200" height="250"/>
+    <img id="cloudcat" src="img/cloudcat.png" width="200" height="250"/>
+    <img id="mooncat" src="img/mooncat.png" width="200" height="250"/>
+    <img id="snowcat" src="img/snowcat.png" width="200" height="250"/>
+    <img id="suncat" src="img/suncat.png" width="200" height="250"/>
+    <img id="tempcat" src="img/tempcat.png" width="200" height="250"/>
+    <img id="thundercat" src="img/thundercat.png" width="200" height="250"/>
+    <img id="windcat" src="img/windcat.png" width="200" height="250"/>
+    <script>
+        var sound1 = new buzz.sound("sound/rain sound.wav");
+        var sound2 = new buzz.sound("sound/catwithum.wav");
+        var sound3 = new buzz.sound("sound/cloud.wav");
+        var sound4 = new buzz.sound("sound/twinkle.wav");
+        var sound5 = new buzz.sound("sound/snow.wav");
+        var sound6 = new buzz.sound("sound/bird.wav");
+        var sound7 = new buzz.sound("sound/temp.wav");
+        var sound8 = new buzz.sound("sound/thunder.wav");
+        var sound9 = new buzz.sound("sound/wind.wav");
+
+        window.onload = function (){
+            document.getElementById('catumbrella').addEventListener('click', function () {sound1.play();});
+            document.getElementById('catwithumbrella').addEventListener('click', function () {sound2.play();});
+            document.getElementById('cloudcat').addEventListener('click', function () {sound3.play();});
+            document.getElementById('mooncat').addEventListener('click', function () {sound4.play();});
+            document.getElementById('snowcat').addEventListener('click', function () {sound5.play();});
+            document.getElementById('suncat').addEventListener('click', function () {sound6.play();});
+            document.getElementById('tempcat').addEventListener('click', function () {sound7.play();});
+            document.getElementById('thundercat').addEventListener('click', function () {sound8.play();});
+            document.getElementById('windcat').addEventListener('click', function () {sound9.play();});
+
+        };
+    </script>
+
+</body>
+
+</html>
